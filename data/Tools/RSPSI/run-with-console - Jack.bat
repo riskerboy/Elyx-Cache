@@ -1,2 +1,0 @@
-"C:\Program Files\Java\jdk-11.0.9\bin\java.exe" --module-path "javafx\lib" --add-modules=javafx.base --add-modules=javafx.controls --add-modules=javafx.fxml --add-modules=javafx.graphics --add-modules=javafx.media --add-modules=javafx.swing --add-modules=javafx.web --add-modules=javafx.swt -jar "rspsi.jar"
-pause
