@@ -1,0 +1,1 @@
+CreateObject("Wscript.Shell").Run "run-with-console.bat", 0, True
