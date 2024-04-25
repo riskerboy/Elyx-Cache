@@ -2,6 +2,8 @@ package com.elyx
 
 import com.elyx.custom.PackSprites
 import dev.openrune.cache.tools.tasks.CacheTask
+import dev.openrune.cache.tools.tasks.impl.PackMaps
+import dev.openrune.cache.tools.tasks.impl.defs.PackItems
 import java.io.File
 
 
@@ -16,5 +18,6 @@ fun getCustomDir(loc : String): File {
 }
 
 val tasks : Array<CacheTask> = arrayOf(
-    PackSprites(getCustomDir("sprites"))
+    PackSprites(getCustomDir("sprites")),
+    PackMaps(getCustomDir("maps"),XTEAS)
 )

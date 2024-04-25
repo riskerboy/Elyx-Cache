@@ -1,6 +1,6 @@
 package com.elyx
 
-import org.jire.js5server.MainNew
+import org.jire.js5server.Js5Server
 import java.io.File
 
 
@@ -11,7 +11,8 @@ object RunJs5 {
 
     fun init() {
         println("Found cache$CACHE_LOCATION")
-        MainNew.init(CACHE_LOCATION)
+        val ports = arrayOf(443, 43594, 50000)
+        Js5Server.init(CACHE_LOCATION.absolutePath, ports.toIntArray(), version = 217, false)
     }
 }
 
